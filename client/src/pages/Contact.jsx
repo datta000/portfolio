@@ -21,7 +21,7 @@ const Contact = () => {
         console.log("Submitting form:", form);
 
         try {
-            const res = await fetch("http://localhost:5000/api/contact", {
+            const res = await fetch("https://portfolio-l7qw.onrender.com/api/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

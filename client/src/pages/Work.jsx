@@ -7,7 +7,7 @@ const Work = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/projects")
+        fetch("https://portfolio-l7qw.onrender.com/api/projects")
             .then(res => res.json())
             .then(data => {
                 // Map MongoDB _id to id for React key
