@@ -1,0 +1,16 @@
+# Ignore environment files
+.env
+
+# Ignore system or IDE files
+.vscode/
+.idea/
+__pycache__/
+.DS_Store
+
+# Ignore dependencies
+node_modules/
+venv/
+
+# Ignore build or output files
+dist/
+build/
