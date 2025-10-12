@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import SectionWrapper from "../components/SectionWrapper";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
+
 const Contact = () => {
     const [form, setForm] = useState({
         name: '',
@@ -21,7 +24,7 @@ const Contact = () => {
         console.log("Submitting form:", form);
 
         try {
-            const res = await fetch("https://portfolio-l7qw.onrender.com/api/contact", {
+            const res = await fetch(`${API_URL}/contact`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

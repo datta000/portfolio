@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import ProjectCard from '../components/projectCard.jsx';
 import SectionWrapper from '../components/SectionWrapper.jsx';
+const API_URL = import.meta.env.VITE_API_URL;
 
 const Work = () => {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch("https://portfolio-l7qw.onrender.com/api/projects")
+        fetch(`${API_URL}/projects`)
             .then(res => res.json())
             .then(data => {
                 // Map MongoDB _id to id for React key
