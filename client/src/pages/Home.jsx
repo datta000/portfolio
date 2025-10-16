@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import SectionWrapper from "../components/SectionWrapper";
+const API_URL = import.meta.env.VITE_API_URL;
 
 
 
